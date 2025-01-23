@@ -75,6 +75,7 @@ body {
   border: 2px solid #333;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Individual square cell styling */
@@ -137,4 +138,31 @@ body {
 
 .grid-container .cell:nth-child(4n+3) {
   animation-delay: 3s;
+}
+
+/* Responsive Design */
+
+/* For smaller devices, adjust grid layout */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-rows: repeat(10, 20px); /* 10 rows */
+    grid-template-columns: repeat(10, 20px); /* 10 columns */
+  }
+}
+
+/* For very small screens (like phones) */
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-rows: repeat(5, 20px); /* 5 rows */
+    grid-template-columns: repeat(5, 20px); /* 5 columns */
+  }
+
+  .game-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
 }
