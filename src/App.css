@@ -1,0 +1,14 @@
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #fff; 
+}
+
+.controls {
+  margin: 20px;
+  color: #ccc; 
+}
+
+.controls label {
+  margin: 0 10px;
+  color: #0f0; }

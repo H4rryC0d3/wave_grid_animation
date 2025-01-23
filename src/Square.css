@@ -1,0 +1,13 @@
+.square {
+  width: 20px; 
+  height: 20px;
+  transition: background-color 0.3s ease; 
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Optional hover effect for interaction */
+.square:hover {
+  background-color: rgba(0, 255, 0, 0.7); 
+}
+
+  
